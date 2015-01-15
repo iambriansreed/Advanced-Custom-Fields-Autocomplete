@@ -1,4 +1,5 @@
 === Advanced Custom Fields: Autocomplete Field ===
+
 Contributors: Brian S. Reed
 Requires at least: 3.5
 Tested up to: 3.8.1
