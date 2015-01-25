@@ -1,6 +1,6 @@
 === Advanced Custom Fields: Autocomplete Field ===
 
-Contributors: Brian S. Reed
+Contributors: Brian S. Reed, Max Lyuchin
 Requires at least: 3.5
 Tested up to: 3.8.1
 Stable tag: trunk
@@ -17,6 +17,7 @@ This is a simple field that looks up values previously entered for this field. T
 
 This ACF field type is compatible with:
 * ACF 5
+* ACF 4
 
 == Installation ==
 
