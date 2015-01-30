@@ -2,7 +2,7 @@
 
 /*
 Plugin Name: Advanced Custom Fields: Autocomplete
-Plugin URI: https://github.com/cadic/Advanced-Custom-Fields-Autocomplete
+Plugin URI: https://github.com/iambriansreed/Advanced-Custom-Fields-Autocomplete
 Description: Simple field that looks up values previously entered for this field.
 Version: 1.0.0
 Author: Brian S. Reed, Max Lyuchin
