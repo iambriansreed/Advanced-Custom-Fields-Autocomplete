@@ -32,14 +32,13 @@ class acf_field_autocomplete extends acf_field {
 		
         //$results = array( 'post' => $_POST, 'get' => $_GET );
         
-        $results = $wpdb->get_col( $wpdb->prepare( "
-         SELECT DISTINCT postmeta2.meta_value FROM $wpdb->postmeta as postmeta1, $wpdb->postmeta as postmeta2 WHERE postmeta1.meta_value = '%s' AND postmeta1.meta_key = CONCAT( '_', postmeta2.meta_key ) AND postmeta2.meta_value LIKE %s",
-         $_REQUEST['field_key'],
-         '%' . $_REQUEST['request'] . '%'
-         ) );
+		$results = $wpdb->get_col( $wpdb->prepare( "
+	        SELECT DISTINCT meta_value FROM {$wpdb->postmeta}
+	        WHERE meta_key = '%s'
+	        AND meta_value LIKE %s
+			", $_REQUEST['field_key'], '%'.$_REQUEST['request'].'%' ) );
                 
 		echo json_encode($results);
-
 
 		wp_die(); 
 		
