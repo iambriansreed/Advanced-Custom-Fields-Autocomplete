@@ -9,9 +9,13 @@
 				if(!request.term.trim().length)
 					response( [] );
 				
+				if (!(key = $el.data('field_name'))) {
+					key = $el.data('key');
+				}
+				
 				$.getJSON( ajaxurl, { 
 						'action' : 'autocomplete_ajax',
-						'field_key' : $el.data('field_name'),
+						'field_key' : key,
 						'request' : request.term.trim()
 					}, function( data ){
 					
